@@ -96,7 +96,7 @@ class Registration(APIView):
         except EmailNotValidError as e:
             return CustomBadRequest(message=str(e))
 
-        except Exception:
+        except Exception as e:
             traceback.print_exc(e)
             return GenericException()
 
