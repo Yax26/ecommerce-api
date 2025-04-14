@@ -5,7 +5,7 @@ from common.models import Audit
 
 class Customer(Audit):
     class Meta:
-        db_table = 'ws_customer'
+        db_table = 'ec_customer'
 
     customer_id = models.BigAutoField(primary_key=True)
 
