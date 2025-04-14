@@ -1,4 +1,5 @@
 import re
+import traceback
 
 from rest_framework.views import APIView
 from django.db.models import Q
@@ -96,6 +97,7 @@ class Registration(APIView):
             return CustomBadRequest(message=str(e))
 
         except Exception:
+            traceback.print_exc(e)
             return GenericException()
 
 
