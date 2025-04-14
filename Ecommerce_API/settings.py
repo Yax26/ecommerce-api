@@ -87,10 +87,10 @@ WSGI_APPLICATION = 'Ecommerce_API.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ecom',
+        'NAME': 'railway',
         'USER': 'root',
-        'PASSWORD': 'Dna@182601',
-        'HOST': '127.0.0.1',
+        'PASSWORD': 'dqHmnFYUpfyOSVOxHAOvwsSeAXjFyUCb',
+        'HOST': 'mysql.railway.internal',
         'PORT': '3306',
         'OPTION': {
             "init_command": "SET sql_mode='STRICT_TRANS_TABLES'",
